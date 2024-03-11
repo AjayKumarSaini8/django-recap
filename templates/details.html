@@ -11,6 +11,9 @@
     {% endcomment %}
   </head>
   <body>
+    {% with phone=0101010 %}
+    <h1>Hello {{phone}}, this is phone number...</h1>
+    {% endwith %}
     <h1>{{mymember.firstname}} {{mymember.lastname}}</h1>
   </body>
 </html>
