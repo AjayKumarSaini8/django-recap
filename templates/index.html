@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% comment %}
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    {% endcomment %} {% comment %}
+    <script src="main.js"></script>
+    {% endcomment %}
+  </head>
+  <body>
+    <ul>
+      {% for x in mymembers %}
+      <li><a href='/members/details/{{x.id}}'>{{x.id}}  {{x.firstname}} {{x.lastname}}</li>
+      {% endfor %}
+
+      <p>Back to <a href="/members">Members</a></p>
+    </ul>
+  </body>
+</html>
